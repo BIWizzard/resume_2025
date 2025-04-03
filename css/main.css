@@ -1,0 +1,112 @@
+body {
+  background-color: #1A202C;
+  color: #F7FAFC;
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #F7FAFC;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #4FD1C5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #4FD1C5;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: #31bcaf;
+  text-decoration: underline;
+}
+
+#mainNav {
+  background-color: rgba(26, 32, 44, 0.9);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-bottom: 1px solid #2d374c;
+}
+
+footer {
+  background-color: #232c3c;
+  color: #A0AEC0;
+}
+
+/* Add to the end of scss/main.scss */
+#hero {
+  min-height: 80vh; /* Make hero take up significant screen height */
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.95)), url("images/Hero_BG.jpg") center center/cover no-repeat; /* Optional: Add a subtle background image */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#hero h1 {
+  color: #F7FAFC;
+}
+#hero .lead {
+  color: #F7FAFC;
+  font-weight: 500;
+}
+#hero blockquote {
+  border-left: 3px solid #4FD1C5;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #A0AEC0;
+}
+
+#cta-contact {
+  background-color: #4FD1C5;
+  border-color: #4FD1C5;
+  color: #1A202C;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+#cta-contact:hover {
+  background-color: #33c4b7;
+  border-color: #33c4b7;
+  color: #1A202C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-light {
+  border-color: #4FD1C5;
+  color: #4FD1C5;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn-outline-light:hover {
+  background-color: #4FD1C5;
+  border-color: #4FD1C5;
+  color: #1A202C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#mainNav .navbar-brand {
+  color: #F7FAFC;
+}
+#mainNav .navbar-brand:hover {
+  color: #4FD1C5;
+}
+#mainNav .nav-link {
+  color: #A0AEC0;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  transition: color 0.2s ease;
+}
+#mainNav .nav-link:hover, #mainNav .nav-link.active {
+  color: #4FD1C5;
+}
+#mainNav .navbar-toggler {
+  border-color: rgba(79, 209, 197, 0.5);
+}/*# sourceMappingURL=main.css.map */

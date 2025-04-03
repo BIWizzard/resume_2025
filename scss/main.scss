@@ -1,0 +1,165 @@
+// 1. Define Custom Variables (or import from _variables.scss)
+$primary-bg: #1A202C;        // Dark Blue/Gray
+$secondary-bg: #2D3748;     // Slightly lighter dark gray (for cards maybe)
+$light-text: #F7FAFC;        // Off-White
+$accent: #4FD1C5;           // Vibrant Teal
+$secondary-text: #A0AEC0;   // Lighter gray for subtle text
+
+$font-family-sans-serif: 'Inter', sans-serif;
+$headings-font-family: 'Poppins', sans-serif;
+$headings-font-weight: 600; // Make headings bolder
+
+// 2. Body Styling Overrides
+body {
+    background-color: $primary-bg;
+    color: $light-text;
+    font-family: $font-family-sans-serif;
+}
+
+// 3. Heading Styles
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    color: $light-text; // Ensure headings are bright
+}
+
+h2 {
+    margin-bottom: 1.5rem; // Add some space below section titles
+    color: $accent; // Make section titles stand out with accent color
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+// 4. Link Styles
+a {
+    color: $accent;
+    text-decoration: none; // Remove underline by default
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+        color: darken($accent, 10%);
+        text-decoration: underline; // Add underline on hover
+    }
+}
+
+// 5. Section Padding (using Bootstrap class 'py-5' in HTML for now, but can customize here)
+// section {
+//    // Example: Add more padding on larger screens if needed
+//    // @media (min-width: 992px) {
+//    //     padding-top: 6rem;
+//    //     padding-bottom: 6rem;
+//    // }
+// }
+
+// 6. Navbar Customization (placeholder)
+#mainNav {
+    background-color: rgba($primary-bg, 0.9); // Slightly transparent dark background
+    backdrop-filter: blur(5px); // Add a subtle blur effect
+    border-bottom: 1px solid lighten($primary-bg, 10%);
+}
+
+// 7. Footer Customization
+footer {
+    background-color: lighten($primary-bg, 5%); // Slightly lighter than main bg
+    color: $secondary-text;
+}
+
+// Add specific styles for sections (Hero, Experience Cards, etc.) below
+/* Add to the end of scss/main.scss */
+
+#hero {
+    min-height: 80vh; /* Make hero take up significant screen height */
+    display: flex;
+    align-items: center; // Vertically center content
+    background: linear-gradient(rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.95)), url('images/Hero_BG.jpg') center center/cover no-repeat; /* Optional: Add a subtle background image */
+    // If no image, just use a gradient or solid color:
+    // background: $primary-bg; // Or a subtle gradient
+    padding-top: 5rem; // Add padding because of sticky navbar
+    padding-bottom: 5rem;
+
+    h1 {
+        color: $light-text; // Ensure heading is bright
+    }
+
+    .lead { // Your title
+        color: $light-text;
+        font-weight: 500; // Slightly bolder than normal
+    }
+
+    blockquote {
+        border-left: 3px solid $accent;
+        padding-left: 1rem;
+        margin-left: 0;
+        color: $secondary-text; // Use lighter gray for the quote
+    }
+}
+
+// Style the main Call to Action button
+#cta-contact {
+    background-color: $accent;
+    border-color: $accent;
+    color: $primary-bg; // Dark text on the bright button
+    font-weight: 600;
+    transition: all 0.3s ease; // Smooth transition
+
+    &:hover {
+        background-color: darken($accent, 8%);
+        border-color: darken($accent, 8%);
+        color: $primary-bg;
+        transform: translateY(-2px); // Slight lift on hover
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+// Style outline buttons for consistency
+.btn-outline-light {
+    border-color: $accent;
+    color: $accent;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+       background-color: $accent;
+       border-color: $accent;
+       color: $primary-bg; // Dark text on hover
+       transform: translateY(-2px);
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+// Navbar link styling
+#mainNav {
+    .navbar-brand {
+        color: $light-text;
+        &:hover {
+            color: $accent;
+        }
+    }
+    .nav-link {
+        color: $secondary-text; // Muted color for links
+        font-weight: 500;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        transition: color 0.2s ease;
+
+        &:hover,
+        &.active { // Style for active link (needs JS or scrollspy later)
+            color: $accent;
+        }
+    }
+
+     // Style the toggler button (hamburger icon)
+    .navbar-toggler {
+        border-color: rgba($accent, 0.5);
+    }
+    // .navbar-toggler-icon {
+    //      // Use SVG to customize the icon color if needed, Bootstrap's default might be okay
+    // }
+}
+
+// #experience {
+//    .card {
+//        background-color: $secondary-bg;
+//        border: 1px solid lighten($secondary-bg, 10%);
+//    }
+// }
