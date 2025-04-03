@@ -44,7 +44,7 @@ footer {
   min-height: 80vh; /* Make hero take up significant screen height */
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.95)), url("images/Hero_BG.jpg") center center/cover no-repeat; /* Optional: Add a subtle background image */
+  background: linear-gradient(rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.95)), url(/images/Hero_BG.jpg) center center/cover no-repeat; /* Optional: Add a subtle background image */
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
