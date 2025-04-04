@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,26 +21,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
+
 <body class="d-flex flex-column min-vh-100">
 
     <!-- Navbar Section -->
     <header class="sticky-top">
-        <!-- Removed the outer nav tag -->
         <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#">Kenneth Graham</a>
+                <a class="navbar-brand fw-bold" href="#">KG</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto"> <!-- ms-auto pushes items to the right -->
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#hero">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#experience">Experience</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
@@ -61,66 +62,139 @@
     <main class="flex-grow-1">
 
         <!-- Hero Section -->
-        <!-- Added text-center class here -->
         <section id="hero" class="py-5 text-center">
-            <!-- Removed the outer container div -->
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-8"> <!-- Adjust column width as needed -->
+                    <div class="col-lg-8">
 
-                        <!-- Optional: Add Your Headshot Here -->
-                         <img src="/images/KRG_Headshot_Grey.png" alt="Kenneth Graham Headshot" class="rounded-circle mb-4" width="250" height="250">
+                        <img src="/images/KRG_Headshot_Grey.png" alt="Kenneth Graham Headshot" class="rounded-circle mb-4" width="250" height="250">
 
                         <h1 class="display-4 fw-bold mb-3">Kenneth Graham</h1>
                         <p class="lead fw-normal mb-4">Sr. Business Intelligence Developer</p>
-                        <blockquote class="blockquote fs-5 fst-italic mb-4"> <!-- Removed text-white-50 to use default styling which might be better now -->
-                           Translating Data into Clarity, Action, and Results
+                        <blockquote class="blockquote fs-5 fst-italic mb-4">
+                            Translating Data into Clarity, Action, and Results
                         </blockquote>
 
                         <!-- Call to Action Buttons -->
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                            <!-- Use Bootstrap icons if you like -->
                             <a href="#contact" class="btn btn-lg me-md-2" id="cta-contact"> <i class="bi bi-envelope-fill"></i> Contact Me</a>
-                            <!-- Link to your actual PDF resume -->
                             <a href="/doc/Kenneth Graham Business Intelligence Resume April 2025 v2.1.pdf" target="_blank" class="btn btn-outline-light btn-lg" id="cta-resume"><i class="bi bi-file-earmark-arrow-down-fill"></i> Download Resume</a>
-                            <!-- Link to your LinkedIn profile -->
                             <a href="https://www.linkedin.com/in/kennethrgraham" target="_blank" class="btn btn-outline-light btn-lg" id="cta-linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
                         </div>
 
                     </div>
                 </div>
             </div>
-            <!-- Removed the placeholder h1 and p tags that were here -->
         </section>
 
         <!-- Experience Section -->
         <section id="experience" class="py-5">
             <div class="container">
-               <h2>Work Experience</h2>
-                <!-- Experience cards will go here -->
-            </div>
+                <h2 class="text-center mb-5">Work Experience</h2>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-8">
+
+                        <!-- Job Card 1: Trace3 -->
+                        <div class="card job-card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <div>
+                                        <h4 class="card-title mb-0">Sr. Business Intelligence Developer / Data Analyst</h4>
+                                        <h5 class="card-subtitle mb-1 text-muted">Trace3</h5>
+                                    </div>
+                                    <span class="text-muted job-dates">January 2024 - Present</span>
+                                </div>
+
+                                <ul class="job-description">
+                                    <li>Acted as lead BI consultant for Fortune 100 clients across construction, insurance, and retail sectors.</li>
+                                    <li>Delivered scalable Power BI solutions, redesigned semantic models, and automated Invoice Aging and other key workflows using Azure Data Factory and Logic Apps.</li>
+                                    <li>Led UI/UX revamp for reporting interfaces and facilitated stakeholder workshops to align KPIs with strategic goals.</li>
+                                </ul>
+
+                                <!-- ==== TOOLS ==== -->
+                                <div class="d-flex mt-3 tech-group">
+                                    <h6 class="tech-label flex-shrink-0">Tools:</h6>
+                                    <div class="tech-badge-container">
+                                        <span class="badge tech-badge">Power BI (Desktop and Service)</span>
+                                        <span class="badge tech-badge">Logic Apps</span>
+                                        <span class="badge tech-badge">Azure SQL</span>
+                                        <span class="badge tech-badge">Azure DevOps</span>
+                                        <span class="badge tech-badge">Azure Test Plans</span>
+                                        <span class="badge tech-badge">Tabular Editor</span>
+                                        <span class="badge tech-badge">DAX Studio</span>
+                                        <span class="badge tech-badge">Visual Studio</span>
+                                        <span class="badge tech-badge">Fabric</span>
+                                        <span class="badge tech-badge">Power Apps</span>
+                                    </div>
+                                </div>
+
+                                <!-- ==== SKILLS ==== -->
+                                <div class="d-flex mt-2 tech-group">
+                                    <h6 class="tech-label flex-shrink-0">Skills:</h6>
+                                    <div class="tech-badge-container">
+                                        <span class="badge tech-badge">T-SQL</span>
+                                        <span class="badge tech-badge">DAX</span>
+                                        <span class="badge tech-badge">Power Query</span>
+                                        <span class="badge tech-badge">M</span>
+                                        <span class="badge tech-badge">ETL</span>
+                                        <span class="badge tech-badge">RLS</span>
+                                        <span class="badge tech-badge">QA</span>
+                                        <span class="badge tech-badge">Deployment Pipeline</span>
+                                        <span class="badge tech-badge">Data Factory</span>
+                                    </div>
+                                </div>
+                            </div> <!-- **** /card-body **** THIS WAS THE MISSING TAG **** -->
+                        </div> <!-- /card: Trace3 -->
+
+                    <!-- Job Card 2: Tail Wind Informatics -->
+                    <div class="card job-card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <h4 class="card-title mb-0">Sr. Business Intelligence Developer</h4>
+                                    <h5 class="card-subtitle mb-1 text-muted">Tail Wind Informatics</h5>
+                                    <small class="text-muted fst-italic d-block">(Acquired by Trace3)</small> <!-- Added acquisition note -->
+                                </div>
+                                <span class="text-muted job-dates">March 2023 - January 2024</span>
+                            </div>
+
+                            <ul class="job-description">
+                                <li>Led the modernization of legacy BI architecture during enterprise-wide EDW rebuild.</li>
+                                <li>Migrated over 100 reports to Power BI, enforced best practices for data modeling, RLS, and performance tuning.</li>
+                                <li>Championed use of Tabular Editor, DAX Studio, and deployment pipelines.</li>
+                            </ul>
+
+                            <!-- No specific Tools/Skills listed for this role in resume, omitting for brevity -->
+
+                        </div> <!-- /card-body -->
+                    </div> <!-- /card: Tail Wind Informatics -->
+
+                    </div> <!-- /col -->
+                </div> <!-- /row -->
+            </div> <!-- /container -->
         </section>
 
         <!-- Skills Section -->
         <section id="skills" class="py-5">
             <div class="container">
-               <h2>Technical Skills</h2>
+                <h2 class="text-center">Technical Skills</h2> <!-- Centered Title -->
                 <!-- Skills content will go here -->
             </div>
         </section>
 
-         <!-- Projects Section (Optional but recommended) -->
+        <!-- Projects Section (Optional but recommended) -->
         <section id="projects" class="py-5">
-         <div class="container">
-            <h2>Key Projects</h2>
-             <!-- Project cards will go here -->
-         </div>
+            <div class="container">
+                <h2 class="text-center">Key Projects</h2> <!-- Centered Title -->
+                <!-- Project cards will go here -->
+            </div>
         </section>
 
         <!-- Certifications Section -->
         <section id="certifications" class="py-5">
             <div class="container">
-               <h2>Certifications</h2>
+                <h2 class="text-center">Certifications</h2> <!-- Centered Title -->
                 <!-- Certification content will go here -->
             </div>
         </section>
@@ -128,7 +202,7 @@
         <!-- Contact Section -->
         <section id="contact" class="py-5">
             <div class="container">
-               <h2>Contact</h2>
+                <h2 class="text-center">Contact</h2> <!-- Centered Title -->
                 <!-- Contact info/form will go here -->
             </div>
         </section>
@@ -152,4 +226,5 @@
     </script>
     <!-- <script src="js/script.js"></script> -->
 </body>
+
 </html>

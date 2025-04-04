@@ -36,7 +36,7 @@ a:hover {
 
 footer {
   background-color: #232c3c;
-  color: #A0AEC0;
+  color: #CBD5E0;
 }
 
 /* Add to the end of scss/main.scss */
@@ -59,7 +59,7 @@ footer {
   border-left: 3px solid #4FD1C5;
   padding-left: 1rem;
   margin-left: 0;
-  color: #A0AEC0;
+  color: #CBD5E0;
 }
 
 #cta-contact {
@@ -98,7 +98,7 @@ footer {
   color: #4FD1C5;
 }
 #mainNav .nav-link {
-  color: #A0AEC0;
+  color: #CBD5E0;
   font-weight: 500;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -109,4 +109,90 @@ footer {
 }
 #mainNav .navbar-toggler {
   border-color: rgba(79, 209, 197, 0.5);
+}
+
+/* SCSS for Experience Section */
+.job-card {
+  background-color: #2D3748;
+  border: 1px solid #414f67;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.job-card .card-body {
+  padding: 1.5rem;
+}
+.job-card .card-title {
+  color: #F7FAFC;
+  font-weight: 600;
+}
+.job-card .card-subtitle {
+  font-weight: 500;
+}
+.job-card .job-dates {
+  font-size: 0.9em;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+.job-card .card-subtitle.text-muted,
+.job-card .job-dates.text-muted,
+.job-card small.text-muted {
+  color: #CBD5E0 !important;
+}
+.job-card .job-description {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+.job-card .job-description li {
+  margin-bottom: 0.5rem;
+  color: #F7FAFC;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+.job-card .tech-group {
+  align-items: flex-start;
+}
+.job-card .tech-label {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #CBD5E0;
+  margin-right: 0.75rem;
+  margin-bottom: 0;
+  padding-top: 0.3em;
+  line-height: 1.5;
+}
+.job-card .tech-badge-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.job-card .tech-badge {
+  background-color: #4a5b77;
+  color: #4FD1C5;
+  font-weight: 500;
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  border: 1px solid #4FD1C5;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.job-card .tech-badge:hover {
+  background-color: #4FD1C5;
+  color: #1A202C;
+}
+
+@media (max-width: 767px) {
+  .job-card .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .job-card .job-dates.text-muted {
+    margin-left: 0;
+    margin-top: 0.25rem;
+    font-size: 0.85em;
+  }
 }/*# sourceMappingURL=main.css.map */
