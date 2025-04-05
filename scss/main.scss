@@ -358,7 +358,7 @@ footer {
 
 .tech-badge {
   background-color: lighten($secondary-bg, 15%); // Badge background, slightly lighter than card bg
-  color: $accent;                         // Use accent color for text
+  color: $light-text;                         // Use accent color for text
   font-weight: 500;
   padding: 0.3em 0.6em;                   // Padding around badge text
   font-size: 0.8em;                       // Smaller font size for badges
