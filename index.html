@@ -2,102 +2,104 @@
 <html lang="en">
 
 <head>
+    <!-- ## Meta Tags ## -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kenneth Graham | Sr. Business Intelligence Developer</title>
+    <!-- meta description for SEO -->
+    <meta name="description" content="Online resume and portfolio for Kenneth Graham, Senior Business Intelligence Developer specializing in Power BI, Azure, SQL, and data visualization.">
 
-    <!-- Google Fonts -->
+    <!-- ## External Fonts ## -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+    <!-- ## Stylesheets ## -->
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <!-- Your Custom CSS (Compiled from Sass) -->
+    <!-- Custom SCSS Compiled Styles -->
     <link rel="stylesheet" href="css/main.css">
-
-    <!-- Optional: Bootstrap Icons CDN -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-
-    <!-- Navbar Section -->
+    <!-- ============================================= -->
+    <!-- Header & Navigation Bar                     -->
+    <!-- ============================================= -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#">KG</a>
+                <!-- Brand/Logo -->
+                <a class="navbar-brand fw-bold" href="#hero">KG</a>
+                <!-- Mobile Nav Toggler -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Navigation Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#hero">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#certifications">Certifications</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content Area -->
+    <!-- ============================================= -->
+    <!-- Main Content Wrapper                        -->
+    <!-- ============================================= -->
     <main class="flex-grow-1">
 
-        <!-- Hero Section -->
+        <!-- ============================================= -->
+        <!-- Hero Section                                -->
+        <!-- ============================================= -->
         <section id="hero" class="py-5 text-center">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-8">
-
+                        <!-- Headshot Image -->
                         <img src="/images/KRG_Headshot_Grey.png" alt="Kenneth Graham Headshot" class="rounded-circle mb-4" width="250" height="250">
-
+                        <!-- Name -->
                         <h1 class="display-4 fw-bold mb-3">Kenneth Graham</h1>
+                        <!-- Professional Title -->
                         <p class="lead fw-normal mb-4">Sr. Business Intelligence Developer</p>
+                        <!-- Tagline/Value Proposition -->
                         <blockquote class="blockquote fs-5 fst-italic mb-4">
                             Translating Data into Clarity, Action, and Results
                         </blockquote>
-
                         <!-- Call to Action Buttons -->
                         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                            <a href="#contact" class="btn btn-lg me-md-2" id="cta-contact"> <i class="bi bi-envelope-fill"></i> Contact Me</a>
+                            <a href="#contact" class="btn btn-lg me-md-2" id="cta-contact"><i class="bi bi-envelope-fill"></i> Contact Me</a>
                             <a href="/doc/Kenneth Graham Business Intelligence Resume April 2025 v2.1.pdf" target="_blank" class="btn btn-outline-light btn-lg" id="cta-resume"><i class="bi bi-file-earmark-arrow-down-fill"></i> Download Resume</a>
-                            <a href="https://www.linkedin.com/in/kennethrgraham" target="_blank" class="btn btn-outline-light btn-lg" id="cta-linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/kennethrgraham" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg" id="cta-linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
+        <!-- ============================================= -->
+        <!-- Work Experience Section                     -->
+        <!-- ============================================= -->
         <section id="experience" class="py-5">
             <div class="container">
                 <h2 class="text-center mb-5">Work Experience</h2>
-
                 <div class="row justify-content-center">
+                    <!-- Centered column for consistent card width -->
                     <div class="col-lg-10 col-xl-8">
 
-                        <!-- Job Card 1: Trace3 -->
+                        <!-- Job Card :: Trace3 -->
                         <div class="card job-card mb-4">
                             <div class="card-body">
+                                <!-- Header: Title, Company, Dates -->
                                 <div class="d-flex justify-content-between align-items-baseline mb-2">
                                     <div>
                                         <h4 class="card-title mb-0">Sr. Business Intelligence Developer / Data Analyst</h4>
@@ -105,70 +107,50 @@
                                     </div>
                                     <span class="text-muted job-dates">January 2024 - Present</span>
                                 </div>
-
+                                <!-- Job Description / Key Responsibilities -->
                                 <ul class="job-description">
                                     <li>Acted as lead BI consultant for Fortune 100 clients across construction, insurance, and retail sectors.</li>
                                     <li>Delivered scalable Power BI solutions, redesigned semantic models, and automated Invoice Aging and other key workflows using Azure Data Factory and Logic Apps.</li>
                                     <li>Led UI/UX revamp for reporting interfaces and facilitated stakeholder workshops to align KPIs with strategic goals.</li>
                                 </ul>
-
-                                <!-- ==== TOOLS ==== -->
+                                <!-- Tools Used -->
                                 <div class="d-flex mt-3 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Tools:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">Power BI (Desktop and Service)</span>
-                                        <span class="badge tech-badge">Logic Apps</span>
-                                        <span class="badge tech-badge">Azure SQL</span>
-                                        <span class="badge tech-badge">Azure DevOps</span>
-                                        <span class="badge tech-badge">Azure Test Plans</span>
-                                        <span class="badge tech-badge">Tabular Editor</span>
-                                        <span class="badge tech-badge">DAX Studio</span>
-                                        <span class="badge tech-badge">Visual Studio</span>
-                                        <span class="badge tech-badge">Fabric</span>
-                                        <span class="badge tech-badge">Power Apps</span>
+                                        <span class="badge tech-badge">Power BI (Desktop and Service)</span><span class="badge tech-badge">Logic Apps</span><span class="badge tech-badge">Azure SQL</span><span class="badge tech-badge">Azure DevOps</span><span class="badge tech-badge">Azure Test Plans</span><span class="badge tech-badge">Tabular Editor</span><span class="badge tech-badge">DAX Studio</span><span class="badge tech-badge">Visual Studio</span><span class="badge tech-badge">Fabric</span><span class="badge tech-badge">Power Apps</span>
                                     </div>
                                 </div>
-
-                                <!-- ==== SKILLS ==== -->
+                                <!-- Skills Applied -->
                                 <div class="d-flex mt-2 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Skills:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">T-SQL</span>
-                                        <span class="badge tech-badge">DAX</span>
-                                        <span class="badge tech-badge">Power Query</span>
-                                        <span class="badge tech-badge">M</span>
-                                        <span class="badge tech-badge">ETL</span>
-                                        <span class="badge tech-badge">RLS</span>
-                                        <span class="badge tech-badge">QA</span>
-                                        <span class="badge tech-badge">Deployment Pipeline</span>
-                                        <span class="badge tech-badge">Data Factory</span>
+                                        <span class="badge tech-badge">T-SQL</span><span class="badge tech-badge">DAX</span><span class="badge tech-badge">Power Query</span><span class="badge tech-badge">M</span><span class="badge tech-badge">ETL</span><span class="badge tech-badge">RLS</span><span class="badge tech-badge">QA</span><span class="badge tech-badge">Deployment Pipeline</span><span class="badge tech-badge">Data Factory</span>
                                     </div>
                                 </div>
                             </div> <!-- /card-body -->
-                        </div> <!-- /card: Trace3 -->
+                        </div> <!-- /card :: Trace3 -->
 
-                        <!-- Job Card 2: Tail Wind Informatics -->
+                        <!-- Job Card :: Tail Wind Informatics -->
                         <div class="card job-card mb-4">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-baseline mb-2">
                                     <div>
                                         <h4 class="card-title mb-0">Sr. Business Intelligence Developer</h4>
                                         <h5 class="card-subtitle mb-1 text-muted">Tail Wind Informatics</h5>
-                                        <small class="text-muted fst-italic d-block">(Acquired by Trace3)</small> <!-- Added acquisition note -->
+                                        <small class="text-muted fst-italic d-block">(Acquired by Trace3)</small>
                                     </div>
                                     <span class="text-muted job-dates">March 2023 - January 2024</span>
                                 </div>
-
                                 <ul class="job-description">
                                     <li>Led the modernization of legacy BI architecture during enterprise-wide EDW rebuild.</li>
                                     <li>Migrated over 100 reports to Power BI, enforced best practices for data modeling, RLS, and performance tuning.</li>
                                     <li>Championed use of Tabular Editor, DAX Studio, and deployment pipelines.</li>
                                 </ul>
-                                <!-- No specific Tools/Skills listed -->
+                                <!-- No specific Tools/Skills for this role - included in Trace3-->
                             </div> <!-- /card-body -->
-                        </div> <!-- /card: Tail Wind Informatics -->
+                        </div> <!-- /card :: Tail Wind Informatics -->
 
-                        <!-- Job Card 3: QHR Health -->
+                        <!-- Job Card :: QHR Health -->
                         <div class="card job-card mb-4">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-baseline mb-2">
@@ -178,51 +160,27 @@
                                     </div>
                                     <span class="text-muted job-dates">Jan 2022 - February 2023</span>
                                 </div>
-
                                 <ul class="job-description">
                                     <li>Designed and deployed a suite of Power BI dashboards for Revenue Cycle, Quality, and Supply Chain departments across rural hospitals.</li>
                                     <li>Embedded reports into Vantage application and optimized for cross-role access with row-level security.</li>
                                     <li>Collaborated with leadership to define KPIs, automated cyclical reporting, and reduced manual processing time by 40%.</li>
                                 </ul>
-
-                                <!-- ==== TOOLS ==== -->
                                 <div class="d-flex mt-3 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Tools:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">Power BI (Desktop and Service)</span>
-                                        <span class="badge tech-badge">Power Automate</span>
-                                        <span class="badge tech-badge">Azure SQL</span>
-                                        <span class="badge tech-badge">SSMS</span>
-                                        <span class="badge tech-badge">Lucid Chart</span>
-                                        <span class="badge tech-badge">JIRA</span>
-                                        <span class="badge tech-badge">Confluence</span>
-                                        <span class="badge tech-badge">ALM Toolkit</span>
-                                        <span class="badge tech-badge">Tabular Editor</span>
-                                        <span class="badge tech-badge">DAX Studio</span>
-                                        <span class="badge tech-badge">Visual Studio</span>
-                                        <span class="badge tech-badge">MediTech</span>
-                                        <span class="badge tech-badge">Vantage</span>
+                                        <span class="badge tech-badge">Power BI (Desktop and Service)</span><span class="badge tech-badge">Power Automate</span><span class="badge tech-badge">Azure SQL</span><span class="badge tech-badge">SSMS</span><span class="badge tech-badge">Lucid Chart</span><span class="badge tech-badge">JIRA</span><span class="badge tech-badge">Confluence</span><span class="badge tech-badge">ALM Toolkit</span><span class="badge tech-badge">Tabular Editor</span><span class="badge tech-badge">DAX Studio</span><span class="badge tech-badge">Visual Studio</span><span class="badge tech-badge">MediTech</span><span class="badge tech-badge">Vantage</span>
                                     </div>
                                 </div>
-
-                                <!-- ==== SKILLS ==== -->
                                 <div class="d-flex mt-2 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Skills:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">T-SQL</span>
-                                        <span class="badge tech-badge">DAX</span>
-                                        <span class="badge tech-badge">Power Query</span>
-                                        <span class="badge tech-badge">M</span>
-                                        <span class="badge tech-badge">ETL</span>
-                                        <span class="badge tech-badge">RLS</span>
-                                        <span class="badge tech-badge">QA</span>
-                                        <span class="badge tech-badge">Deployment Pipeline Administration</span>
+                                        <span class="badge tech-badge">T-SQL</span><span class="badge tech-badge">DAX</span><span class="badge tech-badge">Power Query</span><span class="badge tech-badge">M</span><span class="badge tech-badge">ETL</span><span class="badge tech-badge">RLS</span><span class="badge tech-badge">QA</span><span class="badge tech-badge">Deployment Pipeline Administration</span>
                                     </div>
                                 </div>
                             </div> <!-- /card-body -->
-                        </div> <!-- /card: QHR Health -->
+                        </div> <!-- /card :: QHR Health -->
 
-                        <!-- Job Card 4: Advantage DX, Inc. -->
+                        <!-- Job Card :: Advantage DX, Inc. -->
                         <div class="card job-card mb-4">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-baseline mb-2">
@@ -232,45 +190,30 @@
                                     </div>
                                     <span class="text-muted job-dates">March 2021 - Feb 2022</span>
                                 </div>
-
                                 <ul class="job-description">
                                     <li>Designed and deployed tailored Power BI dashboards for 5 medical practices and 20+ healthcare providers, enhancing visibility into Revenue Cycle performance and payer mix dynamics.</li>
                                     <li>Conducted deep-dive data analysis to identify operational bottlenecks and revenue leakage across service codes, patient demographics, and workflow inefficiencies.</li>
                                     <li>Collaborated with Billing Managers and coders to define KPIs, automate financial forecasting, and enable proactive revenue management.</li>
                                 </ul>
-
-                                <!-- ==== TOOLS ==== -->
                                 <div class="d-flex mt-3 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Tools:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">Power BI (Desktop and Service)</span>
-                                        <span class="badge tech-badge">Power Automate</span>
-                                        <span class="badge tech-badge">MySQL</span>
-                                        <span class="badge tech-badge">MySQL Workbench</span>
-                                        <span class="badge tech-badge">CHARM EHR</span>
-                                        <span class="badge tech-badge">Optum</span>
-                                        <span class="badge tech-badge">DAX Studio</span>
+                                        <span class="badge tech-badge">Power BI (Desktop and Service)</span><span class="badge tech-badge">Power Automate</span><span class="badge tech-badge">MySQL</span><span class="badge tech-badge">MySQL Workbench</span><span class="badge tech-badge">CHARM EHR</span><span class="badge tech-badge">Optum</span><span class="badge tech-badge">DAX Studio</span>
                                     </div>
                                 </div>
-
-                                <!-- ==== SKILLS ==== -->
                                 <div class="d-flex mt-2 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Skills:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">SQL</span>
-                                        <span class="badge tech-badge">DAX</span>
-                                        <span class="badge tech-badge">Power Query</span>
-                                        <span class="badge tech-badge">M</span>
-                                        <span class="badge tech-badge">ETL</span>
+                                        <span class="badge tech-badge">SQL</span><span class="badge tech-badge">DAX</span><span class="badge tech-badge">Power Query</span><span class="badge tech-badge">M</span><span class="badge tech-badge">ETL</span>
                                     </div>
                                 </div>
                             </div> <!-- /card-body -->
-                        </div> <!-- /card: Advantage DX, Inc. -->
+                        </div> <!-- /card :: Advantage DX, Inc. -->
 
-                        <!-- Job Card 5: Marquis Labs -->
+                        <!-- Job Card :: Marquis Labs -->
                         <div class="card job-card mb-4">
                             <div class="card-body">
-                                <!-- Note: Multiple roles handled together -->
+                                <!-- Multiple roles handled together -->
                                 <div class="d-flex justify-content-between align-items-baseline mb-2">
                                     <div>
                                         <h4 class="card-title mb-0">Business Intelligence Developer/Analyst</h4>
@@ -279,56 +222,37 @@
                                     </div>
                                     <span class="text-muted job-dates">Feb 2014 - Mar 2021</span>
                                 </div>
-
+                                <!-- Role 1 Description -->
                                 <h6 class="role-subheader mt-3">As Business Intelligence Developer/Analyst:</h6>
                                 <ul class="job-description">
                                     <li>Created and maintained Power BI dashboards serving both internal stakeholders (Executives, Sales, Ops, Billing) and external clients (Payers, Providers, Government Agencies), enabling actionable insights across financial, operational, and clinical domains.</li>
                                     <li>Led automation of COVID-19/Infectious Disease reporting, delivering tailored reports to 38 state agencies in diverse formats (API, SFTP, Fax, Email, CSV, TXT).</li>
                                     <li>Reduced manual workload and eliminated need for additional FTEs by implementing automated scheduling and validation processes.</li>
                                 </ul>
-
+                                <!-- Role 2 Description -->
                                 <h6 class="role-subheader mt-3">As Web Application Developer:</h6>
                                 <ul class="job-description">
                                     <li>Spearheaded development of Marquis Logic™, a custom enterprise web platform integrating internal systems for Order Management, Inventory, RCM, HR, and Procurement.</li>
                                     <li>Built modular architecture enabling workflow automation, role-based access, and on-demand analytics powered by Power BI Embedded.</li>
                                     <li>Designed and deployed a custom COVID-19 variant tracking dashboard for public health departments in rural Oklahoma, helping officials monitor spread patterns and allocate resources.</li>
                                 </ul>
-
                                 <!-- Combined Tools & Skills -->
-                                <!-- ==== TOOLS ==== -->
                                 <div class="d-flex mt-3 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Tools:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">Power BI (Desktop and Service)</span>
-                                        <span class="badge tech-badge">Power Automate</span>
-                                        <span class="badge tech-badge">AWS</span>
-                                        <span class="badge tech-badge">Caspio</span>
-                                        <span class="badge tech-badge">SSMS</span>
-                                        <span class="badge tech-badge">Salesforce</span>
-                                        <span class="badge tech-badge">Labgen</span>
-                                        <span class="badge tech-badge">Claim MD</span>
-                                        <span class="badge tech-badge">Availity</span>
-                                        <span class="badge tech-badge">DAX Studio</span>
+                                        <span class="badge tech-badge">Power BI (Desktop and Service)</span><span class="badge tech-badge">Power Automate</span><span class="badge tech-badge">AWS</span><span class="badge tech-badge">Caspio</span><span class="badge tech-badge">SSMS</span><span class="badge tech-badge">Salesforce</span><span class="badge tech-badge">Labgen</span><span class="badge tech-badge">Claim MD</span><span class="badge tech-badge">Availity</span><span class="badge tech-badge">DAX Studio</span>
                                     </div>
                                 </div>
-
-                                <!-- ==== SKILLS ==== -->
                                 <div class="d-flex mt-2 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Skills:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">T-SQL</span>
-                                        <span class="badge tech-badge">DAX</span>
-                                        <span class="badge tech-badge">Power Query</span>
-                                        <span class="badge tech-badge">M</span>
-                                        <span class="badge tech-badge">HTML</span>
-                                        <span class="badge tech-badge">CSS</span>
-                                        <span class="badge tech-badge">Bootstrap</span>
+                                        <span class="badge tech-badge">T-SQL</span><span class="badge tech-badge">DAX</span><span class="badge tech-badge">Power Query</span><span class="badge tech-badge">M</span><span class="badge tech-badge">HTML</span><span class="badge tech-badge">CSS</span><span class="badge tech-badge">Bootstrap</span>
                                     </div>
                                 </div>
                             </div> <!-- /card-body -->
-                        </div> <!-- /card: Marquis Labs -->
+                        </div> <!-- /card :: Marquis Labs -->
 
-                        <!-- Job Card 6: KRG Holding -->
+                        <!-- Job Card :: KRG Holding -->
                         <div class="card job-card mb-4">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-baseline mb-2">
@@ -338,42 +262,28 @@
                                     </div>
                                     <span class="text-muted job-dates">Dec 2012 – Jan 2014</span>
                                 </div>
-
                                 <ul class="job-description">
                                     <li>Delivered targeted BI and operations consulting for Field Service organizations, with a focus on performance measurement, process optimization, and technology enablement.</li>
                                     <li>Designed and implemented custom Power BI dashboards and data models to support real-time KPI tracking, customer satisfaction analysis, and operational decision-making.</li>
                                     <li>Led workflow automation initiatives by integrating business systems and reducing manual dependencies.</li>
                                     <li>Partnered with client stakeholders to evaluate tech stack alignment and improve reporting efficiency across distributed teams.</li>
                                 </ul>
-
-                                <!-- ==== TOOLS ==== -->
                                 <div class="d-flex mt-3 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Tools:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">MS Office</span>
-                                        <span class="badge tech-badge">MS Access</span>
-                                        <span class="badge tech-badge">CSG</span>
-                                        <span class="badge tech-badge">Oracle Workforce Management</span>
-                                        <span class="badge tech-badge">Siebel Analytics</span>
-                                        <span class="badge tech-badge">Visio</span>
+                                        <span class="badge tech-badge">MS Office</span><span class="badge tech-badge">MS Access</span><span class="badge tech-badge">CSG</span><span class="badge tech-badge">Oracle Workforce Management</span><span class="badge tech-badge">Siebel Analytics</span><span class="badge tech-badge">Visio</span>
                                     </div>
                                 </div>
-
-                                <!-- ==== SKILLS ==== -->
                                 <div class="d-flex mt-2 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Skills:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">Power Pivot</span>
-                                        <span class="badge tech-badge">DAX</span>
-                                        <span class="badge tech-badge">Power Query</span>
-                                        <span class="badge tech-badge">M</span>
-                                        <span class="badge tech-badge">Project Management</span>
+                                        <span class="badge tech-badge">Power Pivot</span><span class="badge tech-badge">DAX</span><span class="badge tech-badge">Power Query</span><span class="badge tech-badge">M</span><span class="badge tech-badge">Project Management</span>
                                     </div>
                                 </div>
                             </div> <!-- /card-body -->
-                        </div> <!-- /card: KRG Holding -->
+                        </div> <!-- /card :: KRG Holding -->
 
-                        <!-- Job Card 7: OnProcess Technology -->
+                        <!-- Job Card :: OnProcess Technology -->
                         <div class="card job-card mb-4">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-baseline mb-2">
@@ -383,93 +293,359 @@
                                     </div>
                                     <span class="text-muted job-dates">Apr 2010 - Dec 2012</span>
                                 </div>
-
                                 <ul class="job-description">
                                     <li>Directed end-to-end solution engineering for global clients, designing technology-enabled supply chain strategies aligned with client pain points and market needs.</li>
                                     <li>Acted as technical advisor during business development efforts, delivering customized solutions and cost models that contributed to multimillion-dollar contracts.</li>
                                     <li>Collaborated across Sales, Product, and Operations to develop reusable frameworks, process templates, and client presentations.</li>
                                     <li>Maintained high client satisfaction scores and nurtured strategic accounts.</li>
                                 </ul>
-
-                                <!-- ==== TOOLS ==== -->
                                 <div class="d-flex mt-3 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Tools:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">Excel</span>
-                                        <span class="badge tech-badge">Visio</span>
-                                        <span class="badge tech-badge">Powerpoint</span>
-                                        <span class="badge tech-badge">MS Project</span>
-                                        <span class="badge tech-badge">Salesforce</span>
+                                        <span class="badge tech-badge">Excel</span><span class="badge tech-badge">Visio</span><span class="badge tech-badge">Powerpoint</span><span class="badge tech-badge">MS Project</span><span class="badge tech-badge">Salesforce</span>
                                     </div>
                                 </div>
-
-                                <!-- ==== SKILLS ==== -->
                                 <div class="d-flex mt-2 tech-group">
                                     <h6 class="tech-label flex-shrink-0">Skills:</h6>
                                     <div class="tech-badge-container">
-                                        <span class="badge tech-badge">Business Development</span>
-                                        <span class="badge tech-badge">Project Management</span>
-                                        <span class="badge tech-badge">Process Engineering</span>
+                                        <span class="badge tech-badge">Business Development</span><span class="badge tech-badge">Project Management</span><span class="badge tech-badge">Process Engineering</span>
                                     </div>
                                 </div>
                             </div> <!-- /card-body -->
-                        </div> <!-- /card: OnProcess Technology -->
+                        </div> <!-- /card :: OnProcess Technology -->
 
-                    </div> <!-- /col -->
+                    </div> <!-- /column -->
                 </div> <!-- /row -->
             </div> <!-- /container -->
         </section>
 
-        <!-- Skills Section -->
+        <!-- ============================================= -->
+        <!-- Technical Skills Section                    -->
+        <!-- ============================================= -->
         <section id="skills" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5">Technical Skills</h2> <!-- Centered Title, Added mb-5 -->
-                <!-- Skills content will go here -->
-            </div>
+                <h2 class="text-center mb-5">Technical Skills</h2>
+                <!-- Grid layout for skill categories -->
+                <div class="row gy-4 justify-content-center">
+
+                    <!-- Category :: BI & Analytics -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skills-category text-center text-lg-start">
+                            <h4 class="category-title mb-3">BI & Analytics</h4>
+                            <div class="skills-list">
+                                <span class="badge tech-badge">Power BI (Desktop)</span><span class="badge tech-badge">Power BI (Service)</span><span class="badge tech-badge">Power BI (Embedded)</span><span class="badge tech-badge">DAX Studio</span><span class="badge tech-badge">Tabular Editor</span><span class="badge tech-badge">Fabric</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category :: Languages & Scripting -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skills-category text-center text-lg-start">
+                            <h4 class="category-title mb-3">Languages & Scripting</h4>
+                            <div class="skills-list">
+                                <span class="badge tech-badge">T-SQL</span><span class="badge tech-badge">DAX</span><span class="badge tech-badge">M (Power Query Language)</span><span class="badge tech-badge">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category :: Cloud & Automation -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skills-category text-center text-lg-start">
+                            <h4 class="category-title mb-3">Cloud & Automation</h4>
+                            <div class="skills-list">
+                                <span class="badge tech-badge">Azure Data Factory</span><span class="badge tech-badge">Azure Logic Apps</span><span class="badge tech-badge">Power Automate</span><span class="badge tech-badge">Azure SQL</span><span class="badge tech-badge">Azure DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category :: Data Modeling -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skills-category text-center text-lg-start">
+                            <h4 class="category-title mb-3">Data Modeling</h4>
+                            <div class="skills-list">
+                                <span class="badge tech-badge">Semantic Models</span><span class="badge tech-badge">Relational Modeling</span><span class="badge tech-badge">Dimensional Modeling</span><span class="badge tech-badge">RLS (Row-Level Security)</span><span class="badge tech-badge">KPI Development</span><span class="badge tech-badge">ETL Process</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category :: Workflow & Collaboration -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skills-category text-center text-lg-start">
+                            <h4 class="category-title mb-3">Workflow & Collaboration</h4>
+                            <div class="skills-list">
+                                <span class="badge tech-badge">Visual Studio</span><span class="badge tech-badge">JIRA</span><span class="badge tech-badge">Confluence</span><span class="badge tech-badge">Lucidchart</span><span class="badge tech-badge">Azure DevOps Boards</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category :: Supporting Tools -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="skills-category text-center text-lg-start">
+                            <h4 class="category-title mb-3">Supporting Tools</h4>
+                            <div class="skills-list">
+                                <span class="badge tech-badge">SSMS</span><span class="badge tech-badge">MySQL Workbench</span><span class="badge tech-badge">Salesforce</span><span class="badge tech-badge">Siebel</span><span class="badge tech-badge">Labgen</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- /row -->
+            </div> <!-- /container -->
         </section>
 
-        <!-- Projects Section (Optional but recommended) -->
+        <!-- ============================================= -->
+        <!-- Key Projects Section                        -->
+        <!-- ============================================= -->
         <section id="projects" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5">Key Projects</h2> <!-- Centered Title, Added mb-5 -->
-                <!-- Project cards will go here -->
-            </div>
+                <h2 class="text-center mb-5">Key Projects</h2>
+                <!-- 2-Column grid for project cards -->
+                <div class="row gy-4 justify-content-center">
+
+                    <!-- Project Card :: EDW Modernization & Power BI Migration -->
+                    <div class="col-md-10 col-lg-6">
+                        <div class="card job-card h-100"> <!-- Reusing job-card style, h-100 for equal height -->
+                            <div class="card-body d-flex flex-column">
+                                <!-- Project Title & Summary -->
+                                <h4 class="card-title mb-2">EDW Modernization & Power BI Migration</h4>
+                                <p class="card-text mb-3 fst-italic text-muted">Modernized legacy BI architecture during an enterprise-wide EDW rebuild (at Tail Wind Informatics).</p>
+                                <!-- Contributions -->
+                                <h6 class="role-subheader mt-2">Contributions:</h6>
+                                <ul class="job-description">
+                                    <li>Led migration of over 100 legacy reports to Power BI infrastructure.</li>
+                                    <li>Enforced best practices for semantic data modeling, Row-Level Security (RLS), and performance tuning.</li>
+                                    <li>Championed adoption of advanced tools like Tabular Editor and DAX Studio.</li>
+                                    <li>Established standardized deployment pipelines for BI assets.</li>
+                                </ul>
+                                <!-- Footer: Tech & Impact -->
+                                <div class="mt-auto pt-3">
+                                    <div class="d-flex mt-3 tech-group">
+                                        <h6 class="tech-label flex-shrink-0">Tech:</h6>
+                                        <div class="tech-badge-container">
+                                            <span class="badge tech-badge">Power BI</span><span class="badge tech-badge">DAX</span><span class="badge tech-badge">Tabular Editor</span><span class="badge tech-badge">DAX Studio</span><span class="badge tech-badge">Data Modeling</span><span class="badge tech-badge">RLS</span><span class="badge tech-badge">Deployment Pipelines</span>
+                                        </div>
+                                    </div>
+                                    <p class="project-impact mt-3 mb-0">
+                                        <i class="bi bi-check-circle-fill text-success me-1"></i> Streamlined BI infrastructure and improved report performance and maintainability.
+                                    </p>
+                                </div>
+                            </div> <!-- /card-body -->
+                        </div> <!-- /card -->
+                    </div> <!-- /column -->
+
+                    <!-- Project Card :: Revenue Cycle Dashboard Suite -->
+                    <div class="col-md-10 col-lg-6">
+                        <div class="card job-card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title mb-2">Revenue Cycle Dashboard Suite</h4>
+                                <p class="card-text mb-3 fst-italic text-muted">Developed a comprehensive suite of Power BI dashboards for rural hospital departments (at QHR Health).</p>
+                                <h6 class="role-subheader mt-2">Contributions:</h6>
+                                <ul class="job-description">
+                                    <li>Designed and deployed dashboards covering Revenue Cycle, Quality, and Supply Chain metrics.</li>
+                                    <li>Embedded reports securely into the Vantage application using Row-Level Security.</li>
+                                    <li>Collaborated with leadership on KPI definition and reporting requirements.</li>
+                                    <li>Implemented automated cyclical reporting processes.</li>
+                                </ul>
+                                <div class="mt-auto pt-3">
+                                    <div class="d-flex mt-3 tech-group">
+                                        <h6 class="tech-label flex-shrink-0">Tech:</h6>
+                                        <div class="tech-badge-container">
+                                            <span class="badge tech-badge">Power BI</span><span class="badge tech-badge">Power Automate</span><span class="badge tech-badge">DAX</span><span class="badge tech-badge">RLS</span><span class="badge tech-badge">ETL</span><span class="badge tech-badge">Vantage</span><span class="badge tech-badge">MediTech</span><span class="badge tech-badge">Azure SQL</span>
+                                        </div>
+                                    </div>
+                                    <p class="project-impact mt-3 mb-0">
+                                        <i class="bi bi-check-circle-fill text-success me-1"></i> Reduced manual processing time by 40% and enhanced cross-departmental data visibility.
+                                    </p>
+                                </div>
+                            </div> <!-- /card-body -->
+                        </div> <!-- /card -->
+                    </div> <!-- /column -->
+
+                    <!-- Project Card :: Key Workflow Automation -->
+                    <div class="col-md-10 col-lg-6">
+                        <div class="card job-card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title mb-2">Key Workflow Automation</h4>
+                                <p class="card-text mb-3 fst-italic text-muted">Automated critical business workflows for Fortune 100 clients using Azure cloud services (at Trace3).</p>
+                                <h6 class="role-subheader mt-2">Contributions:</h6>
+                                <ul class="job-description">
+                                    <li>Designed and implemented automated solutions for Invoice Aging and other key processes.</li>
+                                    <li>Utilized Azure Data Factory for data ingestion/transformation and Logic Apps for orchestration.</li>
+                                    <li>Redesigned semantic models to support automated workflows.</li>
+                                    <li>Led UI/UX improvements for associated reporting interfaces.</li>
+                                    <li>Facilitated stakeholder workshops to align KPIs with strategic automation goals.</li>
+                                </ul>
+                                <div class="mt-auto pt-3">
+                                    <div class="d-flex mt-3 tech-group">
+                                        <h6 class="tech-label flex-shrink-0">Tech:</h6>
+                                        <div class="tech-badge-container">
+                                            <span class="badge tech-badge">Azure Data Factory</span><span class="badge tech-badge">Azure Logic Apps</span><span class="badge tech-badge">Azure SQL</span><span class="badge tech-badge">Power BI</span><span class="badge tech-badge">Data Modeling</span><span class="badge tech-badge">UI/UX</span>
+                                        </div>
+                                    </div>
+                                    <p class="project-impact mt-3 mb-0">
+                                        <i class="bi bi-check-circle-fill text-success me-1"></i> Significantly reduced manual effort and improved efficiency for client financial processes.
+                                    </p>
+                                </div>
+                            </div> <!-- /card-body -->
+                        </div> <!-- /card -->
+                    </div> <!-- /column -->
+
+                    <!-- Project Card :: Marquis Logic™ Platform -->
+                    <div class="col-md-10 col-lg-6">
+                        <div class="card job-card h-100">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title mb-2">Marquis Logic™ Platform & Analytics</h4>
+                                <p class="card-text mb-3 fst-italic text-muted">Spearheaded development of a custom enterprise web platform with integrated analytics (at Marquis Labs).</p>
+                                <h6 class="role-subheader mt-2">Contributions:</h6>
+                                <ul class="job-description">
+                                    <li>Developed a modular web application integrating Order Management, Inventory, RCM, HR, and Procurement systems.</li>
+                                    <li>Implemented role-based access control and workflow automation features.</li>
+                                    <li>Powered on-demand analytics within the platform using Power BI Embedded.</li>
+                                    <li>Designed and deployed a related COVID-19 variant tracking dashboard for public health use.</li>
+                                </ul>
+                                <div class="mt-auto pt-3">
+                                    <div class="d-flex mt-3 tech-group">
+                                        <h6 class="tech-label flex-shrink-0">Tech:</h6>
+                                        <div class="tech-badge-container">
+                                            <span class="badge tech-badge">Power BI Embedded</span><span class="badge tech-badge">HTML</span><span class="badge tech-badge">CSS</span><span class="badge tech-badge">Bootstrap</span><span class="badge tech-badge">Caspio</span><span class="badge tech-badge">T-SQL</span><span class="badge tech-badge">AWS</span><span class="badge tech-badge">SSMS</span><span class="badge tech-badge">Power Automate</span>
+                                        </div>
+                                    </div>
+                                    <p class="project-impact mt-3 mb-0">
+                                        <i class="bi bi-check-circle-fill text-success me-1"></i> Provided integrated operational platform and embedded real-time analytics, improving decision-making.
+                                    </p>
+                                </div>
+                            </div> <!-- /card-body -->
+                        </div> <!-- /card -->
+                    </div> <!-- /column -->
+
+                </div> <!-- /row -->
+            </div> <!-- /container -->
         </section>
 
-        <!-- Certifications Section -->
+        <!-- ============================================= -->
+        <!-- Certifications Section                      -->
+        <!-- ============================================= -->
         <section id="certifications" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5">Certifications</h2> <!-- Centered Title, Added mb-5 -->
-                <!-- Certification content will go here -->
-            </div>
+                <h2 class="text-center mb-5">Certifications</h2>
+                <div class="row justify-content-center">
+                    <!-- Centered column for single certification -->
+                    <div class="col-md-8 col-lg-6 text-center">
+                        <div class="certification-item">
+                            <!-- Badge Image -->
+                            <img src="images/microsoft-certified-associate-badge.svg" alt="Microsoft Certified Associate Badge" class="certification-badge mb-3" width="120" height="120">
+                            <!-- Certification Title -->
+                            <h4 class="certification-title mb-1">Microsoft Certified: Power BI Data Analyst Associate</h4>
+                            <!-- Certification Details -->
+                            <p class="certification-number text-muted">Certification number: 45Y1DA-B2C16C</p>
+                            <!-- Verification Link -->
+                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/KenGraham-7404/1DFEFA0DA6C7420B?sharingId=E4D8B57667DD7D08" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-light mt-2">Verify Certification</a>
+                        </div>
+                    </div> <!-- /column -->
+                </div> <!-- /row -->
+            </div> <!-- /container -->
         </section>
 
-        <!-- Contact Section -->
+        <!-- ============================================= -->
+        <!-- Education Section                           -->
+        <!-- ============================================= -->
+        <section id="education" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Education</h2>
+                <div class="row justify-content-center text-center text-md-start">
+                    <!-- Centered column for stacked education items -->
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- Institution 1 -->
+                        <div class="education-item mb-4">
+                            <h4 class="education-institution mb-0">University of Kentucky</h4>
+                            <p class="education-details text-muted mb-1">Lexington, KY</p>
+                            <p class="education-focus mb-0"><em>Business Administration</em></p>
+                            <p class="education-dates text-muted"><em>Attended: 1988 - 1991</em></p>
+                        </div>
+                        <!-- Institution 2 -->
+                        <div class="education-item">
+                            <h4 class="education-institution mb-0">Central Michigan University</h4>
+                            <p class="education-details text-muted mb-1">Mount Pleasant, MI</p>
+                            <p class="education-focus mb-0"><em>Finance/Business Administration</em></p>
+                            <p class="education-dates text-muted"><em>Attended: 1994 - 1996</em></p>
+                        </div>
+                    </div> <!-- /column -->
+                </div> <!-- /row -->
+            </div> <!-- /container -->
+        </section>
+
+        <!-- ============================================= -->
+        <!-- Contact Section                             -->
+        <!-- ============================================= -->
         <section id="contact" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5">Contact</h2> <!-- Centered Title, Added mb-5 -->
-                <!-- Contact info/form will go here -->
-            </div>
+                <h2 class="text-center mb-5">Contact</h2>
+                <!-- Grid for contact methods -->
+                <div class="row justify-content-center text-center gy-4">
+
+                    <!-- Contact Method :: Email -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-item">
+                            <div class="contact-icon mb-2"><i class="bi bi-envelope-fill fs-2"></i></div>
+                            <h5 class="contact-label mb-1">Email</h5>
+                            <!-- Basic obfuscation in text, mailto link is correct -->
+                            <a href="mailto:k.kmg@icloud.com" class="contact-link">k.kmg [at] icloud.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Method :: Phone -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-item">
+                            <div class="contact-icon mb-2"><i class="bi bi-telephone-fill fs-2"></i></div>
+                            <h5 class="contact-label mb-1">Phone</h5>
+                            <a href="tel:+16169002601" class="contact-link">(616) 900-2601</a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Method :: Location -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-item">
+                            <div class="contact-icon mb-2"><i class="bi bi-geo-alt-fill fs-2"></i></div>
+                            <h5 class="contact-label mb-1">Location</h5>
+                            <!-- Simplified location for online privacy -->
+                            <p class="contact-text mb-0">Greater Grand Rapids, MI Area</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Method :: LinkedIn -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-item">
+                            <div class="contact-icon mb-2"><i class="bi bi-linkedin fs-2"></i></div>
+                            <h5 class="contact-label mb-1">LinkedIn</h5>
+                            <a href="https://www.linkedin.com/in/kennethrgraham" target="_blank" rel="noopener noreferrer" class="contact-link">View Profile</a>
+                        </div>
+                    </div>
+
+                </div> <!-- /row -->
+            </div> <!-- /container -->
         </section>
 
-    </main>
+    </main> <!-- /main -->
 
-    <!-- Footer -->
+    <!-- ============================================= -->
+    <!-- Footer                                        -->
+    <!-- ============================================= -->
     <footer class="py-3 mt-auto">
         <div class="container text-center">
+            <!-- Copyright year updated dynamically -->
             <small>© <span id="year"></span> Kenneth Graham. All Rights Reserved.</small>
         </div>
     </footer>
 
-    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <!-- ## JavaScript ## -->
+    <!-- Bootstrap 5 Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <!-- Optional: Your Custom JS -->
+    <!-- Script for dynamic year in footer -->
     <script>
-        // Simple script to update year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <!-- Custom JS file link (if needed in future) -->
     <!-- <script src="js/script.js"></script> -->
+
 </body>
 
 </html>

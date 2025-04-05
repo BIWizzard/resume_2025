@@ -4,7 +4,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #F7FAFC;
@@ -33,18 +38,36 @@ a:hover {
           backdrop-filter: blur(5px);
   border-bottom: 1px solid #2d374c;
 }
+#mainNav .navbar-brand {
+  color: #F7FAFC;
+}
+#mainNav .navbar-brand:hover {
+  color: #4FD1C5;
+}
+#mainNav .nav-link {
+  color: #CBD5E0;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  transition: color 0.2s ease;
+}
+#mainNav .nav-link:hover, #mainNav .nav-link.active {
+  color: #4FD1C5;
+}
+#mainNav .navbar-toggler {
+  border-color: rgba(79, 209, 197, 0.5);
+}
 
 footer {
   background-color: #232c3c;
   color: #CBD5E0;
 }
 
-/* Add to the end of scss/main.scss */
 #hero {
-  min-height: 80vh; /* Make hero take up significant screen height */
+  min-height: 80vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.95)), url(/images/Hero_BG.jpg) center center/cover no-repeat; /* Optional: Add a subtle background image */
+  background: linear-gradient(rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.95)), url(/images/Hero_BG.jpg) center center/cover no-repeat;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -91,27 +114,10 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#mainNav .navbar-brand {
-  color: #F7FAFC;
-}
-#mainNav .navbar-brand:hover {
-  color: #4FD1C5;
-}
-#mainNav .nav-link {
-  color: #CBD5E0;
-  font-weight: 500;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  transition: color 0.2s ease;
-}
-#mainNav .nav-link:hover, #mainNav .nav-link.active {
-  color: #4FD1C5;
-}
-#mainNav .navbar-toggler {
-  border-color: rgba(79, 209, 197, 0.5);
+#experience {
+  background-color: #1A202C;
 }
 
-/* SCSS for Experience Section */
 .job-card {
   background-color: #2D3748;
   border: 1px solid #414f67;
@@ -128,9 +134,11 @@ footer {
 .job-card .card-title {
   color: #F7FAFC;
   font-weight: 600;
+  margin-bottom: 0;
 }
 .job-card .card-subtitle {
   font-weight: 500;
+  margin-top: 0;
 }
 .job-card .job-dates {
   font-size: 0.9em;
@@ -140,7 +148,8 @@ footer {
 }
 .job-card .card-subtitle.text-muted,
 .job-card .job-dates.text-muted,
-.job-card small.text-muted {
+.job-card small.text-muted,
+.job-card .card-text.text-muted {
   color: #CBD5E0 !important;
 }
 .job-card .job-description {
@@ -169,21 +178,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
-.job-card .tech-badge {
-  background-color: #4a5b77;
-  color: #4FD1C5;
-  font-weight: 500;
-  padding: 0.3em 0.6em;
-  font-size: 0.8em;
-  margin-right: 0.4rem;
-  margin-bottom: 0.4rem;
-  border: 1px solid #4FD1C5;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-.job-card .tech-badge:hover {
-  background-color: #4FD1C5;
-  color: #1A202C;
-}
 
 @media (max-width: 767px) {
   .job-card .d-flex.justify-content-between {
@@ -195,4 +189,162 @@ footer {
     margin-top: 0.25rem;
     font-size: 0.85em;
   }
+}
+#skills {
+  background-color: #202736;
+}
+
+.skills-category {
+  margin-bottom: 1.5rem;
+}
+
+.category-title {
+  color: #F7FAFC;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+.category-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #4FD1C5;
+}
+
+@media (max-width: 991.98px) {
+  .category-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.tech-badge {
+  background-color: #4a5b77;
+  color: #4FD1C5;
+  font-weight: 500;
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+  margin-right: 0.4rem;
+  margin-bottom: 0.6rem;
+  border: 1px solid #4FD1C5;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.tech-badge:hover {
+  background-color: #4FD1C5;
+  color: #1A202C;
+}
+
+#certifications {
+  background-color: #202736;
+}
+
+.certification-badge {
+  max-width: 100%;
+  height: auto;
+}
+
+.certification-title {
+  color: #F7FAFC;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.certification-number {
+  font-size: 0.9em;
+}
+
+.certification-item .btn-outline-light {
+  margin-top: 1rem;
+}
+
+#contact {
+  background-color: #141922;
+}
+
+.contact-icon i {
+  color: #4FD1C5;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-item:hover .contact-icon i {
+  transform: scale(1.1);
+}
+
+.contact-label {
+  color: #F7FAFC;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-link {
+  color: #CBD5E0;
+  text-decoration: none;
+  font-size: 1rem;
+  word-break: break-word;
+  transition: color 0.2s ease;
+}
+.contact-link:hover {
+  color: #4FD1C5;
+  text-decoration: none;
+}
+
+.contact-text {
+  color: #CBD5E0;
+  font-size: 1rem;
+}
+
+#education {
+  background-color: #1A202C;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+}
+
+.education-institution {
+  color: #F7FAFC;
+  font-weight: 600;
+}
+
+.education-details,
+.education-focus,
+.education-dates {
+  font-size: 0.95em;
+}
+
+.education-focus em,
+.education-dates em {
+  color: #CBD5E0;
+  font-style: normal;
+}
+
+#education .text-muted {
+  color: #CBD5E0 !important;
+}
+
+#Projects {
+  background-color: #1A202C;
+}
+
+.job-card .role-subheader {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #CBD5E0;
+  margin-bottom: 0.5rem;
+}
+
+.project-impact {
+  font-weight: 500;
+  font-size: 0.95em;
+  color: #F7FAFC;
+}
+.project-impact i {
+  font-size: 1.1em;
+  vertical-align: middle;
+  margin-right: 0.25rem;
 }/*# sourceMappingURL=main.css.map */
