@@ -63,11 +63,11 @@ This is a static website built with HTML, CSS, and minimal JavaScript. Deploymen
 ## Screenshots
 
 <!-- Add a screenshot of the main landing page -->
-![Portfolio Screenshot 1](/images/Screenshot%201.png)
-![Portfolio Screenshot 2](/images/Screenshot%202.png)
-![Portfolio Screenshot 3](/images/Screenshot%203.png)
-![Portfolio Screenshot 4](/images/Screenshot%204.png)
-![Portfolio Screenshot 5](/images/Screenshot%205.png)
+![Portfolio Screenshot 1](/images/Screenshot_1.png)
+![Portfolio Screenshot 2](/images/Screenshot_2.png)
+![Portfolio Screenshot 3](/images/Screenshot_3.png)
+![Portfolio Screenshot 4](/images/Screenshot_4.png)
+![Portfolio Screenshot 5](/images/Screenshot_5.png)
 
 
 ## Contact
