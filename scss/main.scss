@@ -1,0 +1,548 @@
+// ==========================================================================
+// 1. Configuration & Theming Variables
+// ==========================================================================
+// Define the core color palette and typography for the site.
+
+// -- Color Palette --
+$primary-bg: #1A202C;       // Main dark background color (Dark Blue/Gray)
+$secondary-bg: #2D3748;    // Slightly lighter dark background (used for cards)
+$light-text: #F7FAFC;       // Primary light text color (Off-White)
+$accent: #4FD1C5;          // Main accent color (Vibrant Teal)
+$secondary-text: #CBD5E0;  // Lighter gray for less prominent text (e.g., dates, subtitles)
+
+// -- Typography --
+$font-family-sans-serif: 'Inter', sans-serif; // Primary font for body text
+$headings-font-family: 'Poppins', sans-serif; // Font for all headings (h1-h6)
+$headings-font-weight: 600;                   // Default weight for headings
+
+// ==========================================================================
+// 2. Global Base & Body Styles
+// ==========================================================================
+// Set base styles for the entire document.
+
+body {
+  background-color: $primary-bg;
+  color: $light-text;
+  font-family: $font-family-sans-serif;
+  // Uses d-flex flex-column min-vh-100 in HTML for sticky footer
+}
+
+// ==========================================================================
+// 3. Heading Styles (h1-h6)
+// ==========================================================================
+// Define consistent styling for all heading levels.
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  color: $light-text; // Ensure headings use the primary light text color
+}
+
+// Specific styling for main section titles (h2)
+h2 {
+  margin-bottom: 1.5rem; // Standard bottom margin for section titles
+  color: $accent;        // Use accent color for visual hierarchy
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+// ==========================================================================
+// 4. Link Styles (a)
+// ==========================================================================
+// Default styling for anchor tags.
+
+a {
+  color: $accent;
+  text-decoration: none; // Remove default underline
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: darken($accent, 10%); // Slightly darken accent color on hover
+    text-decoration: underline;   // Add underline only on hover
+  }
+}
+
+// ==========================================================================
+// 5. Section Padding Placeholder
+// ==========================================================================
+// General section padding is applied via Bootstrap's `py-5` utility class in HTML.
+// section { } // No custom global section padding needed currently.
+
+// ==========================================================================
+// 6. Navbar Component Styles (#mainNav)
+// ==========================================================================
+// Customization for the main navigation bar.
+
+#mainNav {
+  background-color: rgba($primary-bg, 0.9); // Semi-transparent background
+  backdrop-filter: blur(5px);              // Subtle blur effect for modern look
+  border-bottom: 1px solid lighten($primary-bg, 10%); // Faint border separator
+
+  .navbar-brand {
+    color: $light-text;
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .nav-link {
+    color: $secondary-text; // Use muted color for inactive links
+    font-weight: 500;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    transition: color 0.2s ease;
+
+    // Style for hovered or active navigation links
+    &:hover,
+    &.active { // `.active` class might be added via JS/Scrollspy later
+      color: $accent;
+    }
+  }
+
+  // Style for the mobile navigation toggle button
+  .navbar-toggler {
+    border-color: rgba($accent, 0.5); // Use semi-transparent accent for border
+  }
+
+  // .navbar-toggler-icon { } // Using Bootstrap default icon style
+}
+
+// ==========================================================================
+// 7. Footer Component Styles
+// ==========================================================================
+// Styling for the site footer.
+
+footer {
+  background-color: lighten($primary-bg, 5%); // Slightly lighter than main background
+  color: $secondary-text;                    // Use muted text color
+}
+
+
+// ==========================================================================
+// 8. Hero Section Styles (#hero)
+// ==========================================================================
+// Styling for the main landing/hero section.
+
+#hero {
+  min-height: 80vh; // Ensure hero takes significant viewport height
+  display: flex;
+  align-items: center; // Vertically center content
+  // Background image with dark gradient overlay for text readability
+  background: linear-gradient(rgba(26, 32, 44, 0.8), rgba(26, 32, 44, 0.95)), url(/images/Hero_BG.jpg) center center / cover no-repeat;
+  padding-top: 5rem;    // Add padding to account for sticky navbar overlap
+  padding-bottom: 5rem;
+
+  // Ensure H1 heading is prominent
+  h1 {
+    color: $light-text;
+  }
+
+  // Style for the subtitle/lead text
+  .lead {
+    color: $light-text;
+    font-weight: 500;
+  }
+
+  // Style for the tagline blockquote
+  blockquote {
+    border-left: 3px solid $accent; // Accent border for emphasis
+    padding-left: 1rem;
+    margin-left: 0;
+    color: $secondary-text; // Use muted color for the quote text
+  }
+}
+
+// ==========================================================================
+// 9. Call to Action (CTA) Button Styles
+// ==========================================================================
+// Styling for primary and secondary action buttons, primarily in Hero.
+
+// Primary CTA Button (e.g., Contact Me)
+#cta-contact {
+  background-color: $accent;
+  border-color: $accent;
+  color: $primary-bg; // Contrast text color against accent background
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($accent, 8%);
+    border-color: darken($accent, 8%);
+    color: $primary-bg;
+    transform: translateY(-2px); // Subtle lift effect
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Subtle shadow effect
+  }
+}
+
+// Secondary/Outline Buttons (e.g., Download Resume, LinkedIn)
+.btn-outline-light {
+  border-color: $accent; // Use accent color for border
+  color: $accent;        // Use accent color for text
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $accent; // Fill with accent color on hover
+    border-color: $accent;
+    color: $primary-bg;      // Invert text color for contrast
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// ==========================================================================
+// 10. Experience Section Styles (#experience, .job-card)
+// ==========================================================================
+// Styling for the work experience section and individual job cards.
+
+#experience {
+  background-color: $primary-bg; // Alt bg A
+}
+
+// Styling for individual experience cards
+.job-card {
+  background-color: $secondary-bg; // Card background distinct from main bg
+  border: 1px solid lighten($secondary-bg, 10%); // Subtle border
+  border-radius: 0.5rem; // Rounded corners
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; // Hover transition
+
+  // Add hover effect to cards
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-body {
+    padding: 1.5rem; // Inner padding for card content
+    // Uses d-flex flex-column in HTML for project cards to push footer down
+  }
+
+  // Job Title styling
+  .card-title {
+    color: $light-text;
+    font-weight: 600;
+    margin-bottom: 0; // Remove bottom margin for closer spacing to subtitle
+  }
+
+  // Company Name / Subtitle styling
+  .card-subtitle {
+    font-weight: 500;
+    margin-top: 0; // Remove top margin for closer spacing to title
+    // Actual color is handled by the `.text-muted` override below
+  }
+
+  // Job Dates styling
+  .job-dates {
+    font-size: 0.9em;
+    font-weight: 500;
+    white-space: nowrap; // Prevent dates from wrapping unnecessarily
+    margin-left: 1rem;   // Space between title block and dates on wider screens
+     // Actual color is handled by the `.text-muted` override below
+  }
+
+  // Specific override for Bootstrap's `.text-muted` within job cards
+  // Ensures sufficient contrast for subtitles, dates, and notes against card background.
+  .card-subtitle.text-muted,
+  .job-dates.text-muted,
+  small.text-muted,
+  .card-text.text-muted {
+    color: $secondary-text !important; // Use the defined lighter gray, !important needed to override Bootstrap utility
+  }
+
+  // Styling for bulleted list job descriptions
+  .job-description {
+    padding-left: 1.2rem; // Standard list indent
+    margin-bottom: 0;
+    li {
+      margin-bottom: 0.5rem; // Space between list items
+      color: $light-text;
+      font-size: 0.95em; // Slightly smaller font for descriptions
+      line-height: 1.6;
+    }
+  }
+
+  // Container for "Tools:" / "Skills:" label and badges (uses d-flex in HTML)
+  .tech-group {
+    align-items: flex-start; // Align label top with first line of badges
+  }
+
+  // Label text ("Tools:", "Skills:")
+  .tech-label {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: $secondary-text;
+    margin-right: 0.75rem; // Space between label and first badge
+    margin-bottom: 0;
+    padding-top: 0.3em;    // Helps vertically align baseline with badges
+    line-height: 1.5;
+    // Uses flex-shrink-0 in HTML to prevent shrinking
+  }
+
+  // Container specifically for the tech/skill badges (allows proper wrapping alignment)
+  .tech-badge-container {
+    display: flex;   // Enable flexbox for badge layout
+    flex-wrap: wrap; // Allow badges to wrap to the next line
+  }
+
+  // Note: `.tech-badge` styles are defined globally below (Section 12)
+}
+
+// Responsive adjustments specifically for job cards
+@media (max-width: 767px) {
+  // Stack Title/Company block and Dates vertically on smaller screens
+  .job-card .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start !important; // Override alignment for stacking
+  }
+  // Adjust date styling when stacked
+  .job-card .job-dates.text-muted {
+    margin-left: 0;       // Remove left margin
+    margin-top: 0.25rem;  // Add top margin for spacing
+    font-size: 0.85em;    // Slightly smaller font on mobile
+  }
+}
+
+
+// ==========================================================================
+// 11. Skills Section Styles (#skills)
+// ==========================================================================
+// Styling for the categorized technical skills section.
+
+#skills {
+  background-color: lighten($primary-bg, 3%); // Alt bg B
+}
+
+// Container for each skill category (e.g., BI & Analytics)
+.skills-category {
+  margin-bottom: 1.5rem; // Ensure vertical space when columns stack
+}
+
+// Title for each skill category (e.g., "BI & Analytics")
+.category-title {
+  color: $light-text;
+  font-weight: 600;
+  position: relative;      // Needed for pseudo-element positioning
+  display: inline-block;   // Ensure underline only spans the text width
+  padding-bottom: 0.3rem;  // Space below text for the underline
+
+  // Decorative underline using pseudo-element
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;          // Aligns left by default (for text-lg-start)
+    width: 50px;      // Fixed width for the underline
+    height: 3px;
+    background-color: $accent;
+  }
+}
+
+// Responsive adjustment for category title underline on smaller screens (when text is centered)
+@media (max-width: 991.98px) { // Below Bootstrap's 'lg' breakpoint
+  .category-title::after {
+    left: 50%; // Center the underline relative to the text block
+    transform: translateX(-50%);
+  }
+}
+
+
+// ==========================================================================
+// 12. Global Tech Badge Style (.tech-badge)
+// ==========================================================================
+// Common styling for technology/skill badges used across sections (Experience, Skills, Projects).
+
+.tech-badge {
+  background-color: lighten($secondary-bg, 15%); // Badge background, slightly lighter than card bg
+  color: $accent;                         // Use accent color for text
+  font-weight: 500;
+  padding: 0.3em 0.6em;                   // Padding around badge text
+  font-size: 0.8em;                       // Smaller font size for badges
+  margin-right: 0.4rem;                   // Horizontal space between badges
+  margin-bottom: 0.6rem;                  // Vertical space between wrapped lines of badges
+  border: 1px solid $accent;              // Subtle border using accent color
+  transition: background-color 0.2s ease, color 0.2s ease; // Hover transition
+
+  &:hover {
+    background-color: $accent; // Invert colors on hover
+    color: $primary-bg;
+  }
+}
+
+
+// ==========================================================================
+// 13. Certifications Section Styles (#certifications)
+// ==========================================================================
+// Styling specific to the Certifications section.
+
+#certifications {
+  background-color: lighten($primary-bg, 3%); // Alt bg B
+}
+
+.certification-item {
+  // Basic container, spacing via element margins (mb-*) and grid gaps
+}
+
+// Styling for the certification badge image
+.certification-badge {
+  max-width: 100%; // Prevent overflow on small screens
+  height: auto;    // Maintain aspect ratio
+  // Width/height set via HTML attributes for initial sizing
+}
+
+// Certification Title (e.g., "Microsoft Certified...")
+.certification-title {
+  color: $light-text;
+  font-weight: 600;
+  font-size: 1.25rem; // Slightly larger font size
+}
+
+// Certification Number text
+.certification-number {
+  font-size: 0.9em;
+  // Inherits color via `.text-muted` override defined for job cards (rule includes `small.text-muted`)
+  // If specific override needed: color: $secondary-text !important;
+}
+
+// Styling for optional verification button
+.certification-item .btn-outline-light {
+   margin-top: 1rem; // Add space above button if uncommented in HTML
+}
+
+
+// ==========================================================================
+// 14. Contact Section Styles (#contact)
+// ==========================================================================
+// Styling for the contact information section.
+
+#contact {
+  background-color: darken($primary-bg, 3%); // Alt bg B
+}
+
+.contact-item {
+  // Container for icon, label, and detail. Spacing via grid gaps and element margins.
+}
+
+// Style for contact icons (Bootstrap Icons)
+.contact-icon i {
+  color: $accent; // Use accent color
+  transition: transform 0.2s ease-in-out; // Transition for hover effect
+}
+
+// Add slight grow effect to icon on hover over the entire contact item
+.contact-item:hover .contact-icon i {
+    transform: scale(1.1);
+}
+
+// Label for contact item (e.g., "Email", "Phone")
+.contact-label {
+  color: $light-text;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+// Styling for clickable contact details (mailto:, tel:, http:)
+.contact-link {
+  color: $secondary-text; // Use muted color for details
+  text-decoration: none;
+  font-size: 1rem;
+  word-break: break-word; // Prevent long links/emails from breaking layout
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $accent; // Highlight with accent color on hover
+    text-decoration: none; // Maintain no underline on hover
+  }
+}
+
+// Styling for non-clickable contact text (e.g., Location)
+.contact-text {
+    color: $secondary-text; // Match link color for consistency
+    font-size: 1rem;
+}
+
+
+// ==========================================================================
+// 15. Education Section Styles (#education)
+// ==========================================================================
+// Styling for the education history section.
+
+#education {
+  background-color: $primary-bg; // Alt bg A
+}
+
+// Container for each education entry
+.education-item {
+  margin-bottom: 1.5rem; // Vertical space between multiple entries
+  // Removed left border/padding for better balance in centered column layout
+}
+
+// Institution Name
+.education-institution {
+  color: $light-text;
+  font-weight: 600;
+}
+
+// Styling for details like location, focus, dates
+.education-details,
+.education-focus,
+.education-dates {
+  font-size: 0.95em;
+  // Color is handled by `.text-muted` override below
+}
+
+// Style text within <em> tags used for focus/dates for semantic clarity
+.education-focus em,
+.education-dates em {
+   color: $secondary-text; // Apply muted color
+   font-style: normal;     // Remove italics if <em> is only for semantics
+}
+
+// Specific override for `.text-muted` within the education section
+#education .text-muted {
+  color: $secondary-text !important; // Ensure sufficient contrast
+}
+
+
+// ==========================================================================
+// 16. Project Section Styles (#projects additions)
+// ==========================================================================
+// Additional styles specific to project cards, complementing `.job-card`.
+
+#Projects {
+    background-color: $primary-bg; // Alt bg A
+  }
+
+// Style for subheaders within project cards (e.g., "Contributions:")
+// Applies within .job-card as project cards reuse that class
+.job-card .role-subheader {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: $secondary-text; // Use muted color for subheader
+  margin-bottom: 0.5rem;
+}
+
+// Style for the project impact/results paragraph
+.project-impact {
+  font-weight: 500;
+  font-size: 0.95em;
+  color: $light-text; // Use primary light text for impact statement
+
+  // Style for the leading icon (e.g., checkmark)
+  i {
+    // color: $accent; // Optional: Use accent color instead of Bootstrap's default .text-success green
+    font-size: 1.1em;       // Slightly larger icon
+    vertical-align: middle; // Better align icon with text baseline
+    margin-right: 0.25rem;  // Small space between icon and text
+  }
+}
+
+// ==========================================================================
+// End of File
+// ==========================================================================
